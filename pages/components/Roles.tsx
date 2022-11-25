@@ -3,13 +3,13 @@ import React from 'react'
 function Roles() {
     return (
         <>
-            <section className="p-20 mx-6  text-black">
+            <section className="p-2 mx-2  text-black">
                 <div className="flex-col  md:flex-row lg:flex items-center justify-between">
-                    <div className="container  mr-10">
+                    <div className="lg:w-[150%]">
                         <img src="https://c4.wallpaperflare.com/wallpaper/135/692/935/astronaut-space-black-background-artwork-hd-wallpaper-preview.jpg" alt="" />
                     </div>
-                    <div className="text-center ">
-                        <p className="lg:text-[26px] my-5 ">
+                    <div className="text-left my-4">
+                        <p className="lg:text-[20px]">
                         60+ intensive days of Space Education with 10+ leading experts from Space and defence
                         agencies, universities, and Space companies. The curriculum includes extensive lectures
                         and workshops on Space infrastructure technology, Spatio-temporal data

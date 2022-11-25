@@ -8,7 +8,7 @@ const Content = () => {
     <>
       <section className="flex justify-center ">
         {/* Content div */}
-        <div className="text-center lg:text-left lg:ml-24 lg:mt-10"> 
+        <div className="text-center lg:text-left lg:ml-24 lg:mt-10 p-2 m-4"> 
           <section className="px-2">
           <h3 className="text-2xl lg:text-4xl">Join Nigeria’s first</h3>
           <h2 className="text-3xl lg:text-8xl md:text-4xl font-bold text-[#000000]">Space Xploration
@@ -27,7 +27,7 @@ const Content = () => {
         </div>
         
         {/* Image div */}
-        <div className="container hidden lg:flex mr-10 md:w-[100%]">
+        <div className="hidden lg:flex mr-10 md:w-[100%]">
           <img src="https://github.com/Adespscientist/next-btcamp/blob/main/public/hero%201.png?raw=true" alt=""/>
         </div>
       </section>

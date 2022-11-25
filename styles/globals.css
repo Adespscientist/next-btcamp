@@ -25,7 +25,7 @@
         @apply bg-[#2f1160] p-2 lg:p-4 w-[100px] lg:w-[150px] text-white rounded-md transition duration-200 hover:bg-[#4223b2] outline-none
     }
     .sectionContent{
-        @apply text-[16px] lg:text-[20px] my-10 
+        @apply text-[16px] lg:text-[20px] my-5 
     }
     .spanTag{
         @apply mt-4 text-[#167e87] 
