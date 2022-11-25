@@ -1,29 +1,21 @@
 import Image from 'next/image'
 import React from 'react'
+import {FaHamburger} from 'react-icons/fa'
 
 const Navbar = () => {
   return (
-    <div>
-     
-    <header>
-      <div className="container flex items-center space-x-2 md:space-10">
-        <div className="logo" >AIQ</div>
-        <ul className="space-x-4 flex">
-          <li className="HeaderLink">Home</li>
-          <li className="HeaderLink">About</li>
-          <li className="HeaderLink">Bootcamp</li>
-          <li className="HeaderLink">Contact us</li>
-        </ul>
-        </div>
-      <div className="flex items-center space-x-4 font-light">
-          <button type="button" className="btn btButton">Register</button>
-      </div>
-
-      </header>
-       
-
-
-        </div>
+    <>
+    
+    <div className="text-6xl font-semibold space-x-6">AIQ</div>
+    <div className="flex space-x-8 justify-between">
+      <li className="headerLink">Home</li>
+      <li className="headerLink">About</li>
+      <li className="headerLink">Bootcamp</li>
+      <li className="headerLink">FAQ</li>
+      <button>Register</button>
+      <FaHamburger className="hidden md:flex lg:flex"/>
+    </div>
+    </>
   )
 }
 

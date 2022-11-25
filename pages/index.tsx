@@ -10,22 +10,19 @@ import asset from '.././public/asset.png'
 
 const Home: NextPage = () => {
   return (
-     <div>
-        <div className="relative mx-0 top-0 mr-auto flex justify-end">
-        <img src="https://github.com/Adespscientist/next-btcamp/blob/main/public/asset.png" className="imageBanner"
-        width={100} height={100}
-        alt=""/>
-        </div>
-      <header>
-      {/* Navbar Here */}
-      <Navbar/>
-      </header>
-      {/* Section Here */}
-      <section>
-        <Content/>
-      </section>
-     </div>
-  ) 
-} 
+    <>
+      <div className=" flex space-x-6 justify-between top-0">
+        <div>
+          <header className="flex space-x-6 justify-between">
+            <Navbar/>
+          </header>
+          </div>
+          <div className="hidden md:flex">
+        <img src="https://github.com/Adespscientist/next-btcamp/blob/main/public/hero%201.png?raw=true"/>
+      </div>
+      </div>
+    </>
+  )
+}
 
 export default Home

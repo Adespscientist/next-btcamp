@@ -2,34 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base{
     body{
-
-        @apply bg-[#ffffff] text-black
+        @apply bg-[#fff] text-black
     }
     header{
-        @apply fixed  top-0 z-50 flex w-full items-center justify-between px-4 py-4
-    }
-    li{
-        @apply  px-2  m-8
+        @apply flex space-x-4 justify-between items-center px-4 py-4
     }
 }
-
 @layer components{
-    .HeaderLink{
-        @apply text-sm md:space-x-4 ml-40 text-[18px] transition hover:text-[#1e5564] cursor-pointer
-    }
-   
-    .btButton{
-        @apply flex items-center mr-20 gap-x-2  text-white rounded px-5 py-1.5 text-sm  transition hover:opacity-75 md:py-2.5  md:px-8 md:text-xl bg-[#2641d7];
-    }
-    .logo{
-        @apply m-4 text-[50px] p-5
-    }
-    .nav-2{
-        @apply justify-between px-8 py-4 w-full
-    }
-    .imageBanner{
-        @apply w-[900px] h-[80vh]
+    .headerLink{
+        @apply relative flex space-x-4 md:ml-4
     }
 }
