@@ -26,17 +26,17 @@ function Roles() {
                 </div>
                
             </section>
-            <section>
-                <div>Roles</div>
-                <div>
-                    <li>GIS/Remote sensing professional
+            <section className="flex-row lg:flex ml-10 items-center">
+                <div className="p-4 m-4 lg:text-[40px]">Roles
+                <div className="flex list-none">
+                    <li className="listStuff">GIS/Remote sensing professional
                     </li>
-                    <li>Software engineers</li>
-                    <li> Data Scientistic
+                    <li className="listStuff">Software engineers</li>
+                    <li className="listStuff"> Data Scientistic
                     </li>
-                </div>
-            </section>
-            <section>
+                </div></div>
+               
+                <section className="lastSec">
                 <div>At the end of this program, participants will have been exposed to the
                     rudiment of how satellites are built and deployed and how data gotten from
                     space can be leveraged for defense and intelligence purposes among other
@@ -48,6 +48,8 @@ function Roles() {
                     applicants will participate.
                 </div>
             </section>
+            </section>
+           
         </>
     )
 }
