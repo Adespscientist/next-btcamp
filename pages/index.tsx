@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Content from './components/Content'
 import Navbar from './components/Navbar'
+import asset from '.././public/asset.png'
 
 
 
@@ -11,9 +12,8 @@ const Home: NextPage = () => {
   return (
      <div>
         <div className="relative mx-0 top-0 mr-auto flex justify-end">
-        <Image src="https://github.com/Adespscientist/next-btcamp/blob/main/public/hero%201.png?raw=true" className="imageBanner"
+        <img src="https://github.com/Adespscientist/next-btcamp/blob/main/public/asset.png" className="imageBanner"
         width={100} height={100}
-        quality={100}
         alt=""/>
         </div>
       <header>
