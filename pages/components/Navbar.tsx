@@ -1,7 +1,10 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Navbar = () => {
   return (
+    <div>
+     
     <header>
       <div className="container flex items-center space-x-2 md:space-10">
         <div className="logo" >AIQ</div>
@@ -17,9 +20,12 @@ const Navbar = () => {
       <div className="flex items-center space-x-4 font-light">
           <button type="button" className="btn btButton">Register</button>
       </div>
-     
       </div>
       </header>
+       
+
+
+        </div>
   )
 }
 

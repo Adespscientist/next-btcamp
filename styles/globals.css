@@ -29,4 +29,7 @@
     .nav-2{
         @apply justify-between px-8 py-4 w-full
     }
+    .imageBanner{
+        @apply w-[400px]
+    }
 }

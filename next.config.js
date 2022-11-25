@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['cdn.pixabay.com', 'c4.wallpaperflare.com', 'pixabay.com'],
+    domains: ['cdn.pixabay.com', 'c4.wallpaperflare.com', 'pixabay.com', 'github.com'],
   },
 }
 
