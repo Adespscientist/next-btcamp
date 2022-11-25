@@ -4,28 +4,22 @@ import React, { useState, useEffect } from 'react'
 import {FaHamburger} from 'react-icons/fa'
 
 const Navbar = () => {
-  const[isClicked, setIsClicked] = useState(false)
-
-  useEffect(() => {
-      const handleClick = () =>{
-        
-      }
-  })
   return (
     <>
-    <div className="navLink">
-    <div className="text-6xl font-semibold space-x-6">AIQ</div>
-    <div className="flex space-x-8 justify-between">
+    <header className="flex">
+    <div className="text-4xl font-bold md:ml-20">
+      AIQ
+     </div>
+     <div className="hidden md:flex space-x-8">
       <li className="headerLink">Home</li>
       <li className="headerLink">About</li>
       <li className="headerLink">Bootcamp</li>
-      <Link href={''}/>
       <li className="headerLink">FAQ</li>
-      
-    </div>
-    </div>
-    <button className="regButton">Register</button>
-      <FaHamburger className="iconMenu"/>
+     </div>
+     <div>
+      <button type="button" className="localbtn">Register</button>
+     </div>
+     </header>
     </>
   )
 }
