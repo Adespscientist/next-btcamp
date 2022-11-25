@@ -3,7 +3,7 @@ import React from 'react'
 function Roles() {
     return (
         <>
-            <section className="p-2 mx-2  text-black">
+            <section className="p-2 mx-2">
                 <div className="flex-col  md:flex-row lg:flex items-center justify-between">
                     <div className="lg:w-[150%]">
                         <img src="https://c4.wallpaperflare.com/wallpaper/135/692/935/astronaut-space-black-background-artwork-hd-wallpaper-preview.jpg" alt="" />

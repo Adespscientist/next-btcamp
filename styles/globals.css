@@ -4,7 +4,7 @@
 
 @layer base{
     body{
-        @apply bg-[#ffffff] text-black
+        @apply bg-[#141425] text-white
     }
     header{
         @apply justify-between p-4 m-6 items-center
@@ -22,7 +22,7 @@
         @apply text-[18px] list-none mx-8 cursor-pointer transition duration-200 hover:text-[#180f30] font-semibold
     }
     .localbtn{
-        @apply bg-[#2f1160] p-2 lg:p-4 w-[100px] lg:w-[150px] text-white rounded-md transition duration-200 hover:bg-[#4223b2] outline-none
+        @apply bg-[#2f1160] p-2 lg:p-4 w-[100px] lg:w-[150px] text-white rounded-md transition duration-200 hover:bg-[#4223b2] outline-none 
     }
     .sectionContent{
         @apply text-[16px] lg:text-[20px] my-5 
