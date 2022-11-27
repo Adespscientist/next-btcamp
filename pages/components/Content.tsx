@@ -11,7 +11,7 @@ const Content = () => {
         <div className="text-center lg:text-left lg:ml-24 lg:mt-10 p-2 m-4"> 
           <section className="px-2">
           <h3 className="text-2xl lg:text-4xl">Join Nigeria’s first</h3>
-          <h2 className="text-3xl lg:text-8xl md:text-4xl font-bold text-[#ffffff]">Space Xploration
+          <h2 className="text-3xl lg:text-8xl md:text-4xl font-bold text-[#3b58ff]">Space Xploration
             bootcamp 1.0</h2>
           <div className="spanTag font-bold">Powered by AIQ.ng
           </div>

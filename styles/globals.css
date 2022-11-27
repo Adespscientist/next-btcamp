@@ -4,7 +4,7 @@
 
 @layer base{
     body{
-        @apply bg-[#141425] text-white
+        @apply bg-[#ffffff] text-black
     }
     header{
         @apply justify-between p-4 m-6 items-center
@@ -14,6 +14,12 @@
     }
     span{
         @apply my-4
+    }
+    input[type=text], input[type=email]{
+        @apply w-[80%] h-[50px]  outline-none rounded border-4
+    }
+    form div{
+        @apply space-y-8
     }
 }
 
@@ -30,5 +36,243 @@
     .spanTag{
         @apply mt-4 text-[#167e87] 
     }
+    .covid-header{
+        @apply flex justify-between flex-wrap items-baseline 
+    }
+  .covid-header.no-step{
+    @apply hidden
+  }
+  .covid-header h2{
+    @apply text-[2.4rem] font-[700] text-[#1c2437] font-[Roboto]
+  }
+  .covid-header .step-count{
+    @apply text-[#a7b2c1] text-[2.4rem] font-[700] font-[Roboto]
+  }
+  .covid-header .step-count.final-step{
+    @apply text-[#1e85ff]
+  }
+  .covid-test-wrap{
+    @apply hidden min-h-[610px] md:min-h-fit
+  }
+  .covid-test-wrap.active{
+    @apply block
+  }
+  .covid-test-wrap h3{
+    @apply text-[2.4rem] text-[#1c2437] font-[500] font-[Roboto]
+  }
+  .covid-test-wrap p{
+    @apply text-[1.5rem] text-[#546274] font-[400] font-[Roboto] mt-10
+  }
+  .covid-test-wrap .step-block{
+    @apply flex flex-col min-h-[420px] mt-[30px] lg:min-h-[auto]
+  }
+  .covid-test-wrap .step-block .form-group{
+    @apply relative mb-[25px]
+  }
+  .covid-test-wrap .step-block .form-group .form-control{
+    @apply h-[55px] rounded-[10px] text-[1.5rem] font-[500] text-[#1c2437] py-[20px] outline-none
+  }
+  .covid-test-wrap .step-block .form-group .form-control::-webkit-input-placeholder {
+    @apply  text-[#b2becc]
+}
+.covid-test-wrap .step-block .form-group .form-control.has-error {
+    @apply border-[#500f0f]
+}
+.covid-test-wrap .step-block .form-group .form-control.has-error + .error-msg {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #ff3e58;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .covid-test-wrap .step-block .form-group .select-input span {
+    position: absolute;
+    top: 27px;
+    right: 15px;
+    height: 0;
+    width: 0;
+    border-top: 6px solid #b2becc;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  .covid-test-wrap .step-block .form-group .select-input select.form-control {
+    color: #b2becc;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .covid-test-wrap .step-block .form-group label {
+    margin-bottom: 0;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    color: #1c2437;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+  @media all and (max-width: 991px) {
+    .covid-test-wrap .step-block .form-group label {
+      text-align: left;
+      padding-left: 50px;
+    }
+  }
+  
+  .covid-test-wrap .step-block .form-group label:before {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    content: '';
+    opacity: 1;
+  }
+  
+.covid-test-wrap .step-block .form-group label:after {
+    opacity: 0;
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    border-radius: 50%;
+    content: url("");
+  }
+  
+  .covid-test-wrap .step-block .error-msg {
+    color: #ff3e58;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .covid-test-wrap .step-block .button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: #1e85ff;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    height: 60px;
+    border: 0;
+    text-align: center;
+    margin-top: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    line-height: 60px;
+  }
+  
+  .covid-test-wrap .step-block .prev-btn {
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #97a2ae;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .covid-test-wrap .step-block .prev-btn img {
+    margin-right: 10px;
+  }
+  
+  .covid-test-wrap.asign-info {
+    margin-bottom: 30px;
+  }
+  
+  .covid-test-wrap.asign-info h3 {
+    color: #12053b;
+    margin-bottom: 60px;
+    position: relative;
+    font-size:20px;
+    
+  }
+  
+  .covid-test-wrap.asign-info h3:before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: url();
+  }
+  
+  .covid-test-wrap.asign-info h3 + p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #1c2437;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .covid-test-wrap.asign-info .step-block .form-group label {
+    color: #b2becc;
+  }
+  
+  .covid-test-wrap.thankyou-sec {
+    margin-bottom: 10px;
+  }
+  
+  .covid-test-wrap.thankyou-sec .test-progress {
+    margin-bottom: 50px;
+  }
+  
+  .covid-test-wrap.thankyou-sec h3 {
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  .covid-test-wrap.thankyou-sec p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1c2437;
+    line-height: 1.4;
+    margin-bottom: 60px;
+  }
+  
+  .covid-test-wrap.thankyou-sec h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #1c2437;
+  }
+  
+  .covid-test-wrap.thankyou-sec .button-reload {
+    margin-top: 100px;
+    font-size: 1.5rem;
+    color: #1e85ff;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-weight: 700;
+  }
+  
+  .covid-test-wrap.thankyou-sec .button-reload:hover {
+    background: #1e85ff;
+    color: #ffffff;
+  }
+  
+  @media all and (max-width: 991px) {
+    .covid-test-wrap.thankyou-sec {
+      text-align: center;
+    }
+  }
+  .button{
+    @apply my-4 mt-4 !important
+  }
+  
   
 }

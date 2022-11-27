@@ -26,7 +26,7 @@ function Roles() {
                 </div>
                
             </section>
-            <section className="ml-10">
+            {/* <section className="ml-10">
                 <div className="p-4 m-4 lg:text-[40px]">Roles</div>
                 <div className="flex list-none">
                     <li className="listStuff">GIS/Remote sensing professional
@@ -35,7 +35,7 @@ function Roles() {
                     <li className="listStuff"> Data Scientistic
                     </li>
                 </div>
-            </section>
+            </section> */}
             <section>
                 <div>At the end of this program, participants will have been exposed to the
                     rudiment of how satellites are built and deployed and how data gotten from
