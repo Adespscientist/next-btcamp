@@ -16,11 +16,22 @@
         @apply my-4
     }
     input[type=text], input[type=email]{
-        @apply w-[80%] h-[50px]  outline-none rounded border-4
+        @apply w-[80%] h-[50px]  outline-none rounded border-2
+    }
+    input[type=file]{
+        @apply rounded outline-none bg-[#4a494b] text-white
+    }
+    input#file-upload-button{
+        @apply hidden 
     }
     form div{
         @apply space-y-8
     }
+    textarea{
+        @apply border-2 overflow-x-hidden overflow-y-hidden w-[100%] h-[80px] pt-[14x] !important 
+    }
+    
+   
 }
 
 @layer components{
@@ -37,16 +48,17 @@
         @apply mt-4 text-[#167e87] 
     }
     .covid-header{
-        @apply flex justify-between flex-wrap items-baseline 
+        @apply flex justify-between flex-wrap items-baseline  mx-4
     }
+    
   .covid-header.no-step{
     @apply hidden
   }
   .covid-header h2{
-    @apply text-[2.4rem] font-[700] text-[#1c2437] font-[Roboto]
+    @apply text-[1.2rem] md:text-[2.4rem] font-[700] text-[#1c2437] font-[Roboto]
   }
   .covid-header .step-count{
-    @apply text-[#a7b2c1] text-[2.4rem] font-[700] font-[Roboto]
+    @apply text-[1.2rem] text-[#a7b2c1] md:text-[2.4rem] font-[700] font-[Roboto]
   }
   .covid-header .step-count.final-step{
     @apply text-[#1e85ff]
@@ -61,7 +73,7 @@
     @apply text-[2.4rem] text-[#1c2437] font-[500] font-[Roboto]
   }
   .covid-test-wrap p{
-    @apply text-[1.5rem] text-[#546274] font-[400] font-[Roboto] mt-10
+    @apply text-[1rem] md:text-[1.5rem] text-[#3e464f] font-[400] font-[Roboto] mt-10
   }
   .covid-test-wrap .step-block{
     @apply flex flex-col min-h-[420px] mt-[30px] lg:min-h-[auto]
@@ -70,10 +82,10 @@
     @apply relative mb-[25px]
   }
   .covid-test-wrap .step-block .form-group .form-control{
-    @apply h-[55px] rounded-[10px] text-[1.5rem] font-[500] text-[#1c2437] py-[20px] outline-none
+    @apply h-[50px] w-full rounded-[10px] md:text-[1rem] text-[.8rem] font-[500] text-[#010101] py-[2px] outline-none border-2
   }
   .covid-test-wrap .step-block .form-group .form-control::-webkit-input-placeholder {
-    @apply  text-[#b2becc]
+    @apply  text-[#2b2b2b] mx-2
 }
 .covid-test-wrap .step-block .form-group .form-control.has-error {
     @apply border-[#500f0f]
@@ -88,8 +100,8 @@
   }
   .covid-test-wrap .step-block .form-group .select-input span {
     position: absolute;
-    top: 27px;
-    right: 15px;
+    top: 145px;
+    right: 20px;
     height: 0;
     width: 0;
     border-top: 6px solid #b2becc;
@@ -97,7 +109,7 @@
     border-right: 6px solid transparent;
   }
   .covid-test-wrap .step-block .form-group .select-input select.form-control {
-    color: #b2becc;
+    color: #2a2b2c;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -155,10 +167,10 @@
   }
   
   .covid-test-wrap .step-block .button {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
     color: #ffffff;
-    background: #1e85ff;
+    background: #28024e;
     width: 100%;
     font-family: "Roboto", sans-serif;
     border-radius: 5px;
@@ -221,9 +233,11 @@
   }
   
   .covid-test-wrap.thankyou-sec {
-    margin-bottom: 10px;
+    @apply mb-2
   }
-  
+  .fluid{
+    @apply mb-0 w-[100px]
+  }
   .covid-test-wrap.thankyou-sec .test-progress {
     margin-bottom: 50px;
   }
@@ -234,11 +248,12 @@
   }
   
   .covid-test-wrap.thankyou-sec p {
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
     color: #1c2437;
-    line-height: 1.4;
-    margin-bottom: 60px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+    @apply md:text-[1.5rem]
   }
   
   .covid-test-wrap.thankyou-sec h4 {
