@@ -142,14 +142,14 @@ function Login() {
                       <select className="form-control" name="role">
                         <option
                           value="GIS and Remote sensing Expert"
-                          name="role1"
+                          
                         >
                           GIS and Remote sensing Expert
                         </option>
-                        <option value="Software engineer" name="role2">
+                        <option value="Software engineer">
                           Software engineer
                         </option>
-                        <option value="Data Analyst" name="role3">
+                        <option value="Data Analyst">
                           Data Analyst
                         </option>
                       </select>
@@ -175,7 +175,7 @@ function Login() {
                       placeholder=""
                       name="question1"
                       id="comment_text"
-                      class="ui-autocomplete-input form-control"
+                      className="ui-autocomplete-input form-control"
                       autoComplete="off"
                       role="textbox"
                       aria-autocomplete="list"
@@ -189,7 +189,7 @@ function Login() {
                       placeholder=""
                       name="question2"
                       id="comment_text"
-                      class="ui-autocomplete-input form-control"
+                      className="ui-autocomplete-input form-control"
                       autoComplete="off"
                       role="textbox"
                       aria-autocomplete="list"
@@ -471,55 +471,55 @@ function Login() {
               <div className="text-left covid-test-wrap test-step ">
                 <p>How did you get to hear about this program</p>
                 <div className="step-block">
-                  <div className="form-groups" name="about">
+                  <div className="form-groups">
                     <input
                       type="radio"
-                      name="about"
+                    
                       className="form-control"
                       id="no1"
                     />
                     <label htmlFor="no1">Facebook</label>
                   </div>
-                  <div className="form-groups" name="about">
+                  <div className="form-groups">
                     <input
                       type="radio"
-                      name="about"
+                    
                       className="form-control"
                       id="no2"
                     />
                     <label htmlFor="no2">Instagram</label>
                   </div>
-                  <div className="form-groups" name="about">
+                  <div className="form-groups">
                     <input
                       type="radio"
-                      name="about"
+                    
                       className="form-control"
                       id="no3"
                     />
                     <label htmlFor="no3">Twitter</label>
                   </div>
-                  <div className="form-groups" name="about">
+                  <div className="form-groups">
                     <input
                       type="radio"
-                      name="about"
+                    
                       className="form-control"
                       id="no4"
                     />
                     <label htmlFor="no4">Youtube</label>
                   </div>
-                  <div className="form-groups" name="about">
+                  <div className="form-groups">
                     <input
                       type="radio"
-                      name="about"
+                    
                       className="form-control"
                       id="no5"
                     />
                     <label htmlFor="no5">Radio</label>
                   </div>
-                  <div className="form-groups" name="about">
+                  <div className="form-groups">
                     <input
                       type="radio"
-                      name="about"
+                    
                       className="form-control"
                       id="no6"
                     />
