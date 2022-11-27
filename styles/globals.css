@@ -16,7 +16,7 @@
         @apply my-4
     }
     input[type=text], input[type=email]{
-        @apply w-[80%] h-[50px]  outline-none rounded border-2
+        @apply w-[100%] h-[50px] outline-none rounded border-2
     }
     input[type=file]{
         @apply rounded outline-none bg-[#4a494b] text-white

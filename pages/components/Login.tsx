@@ -6,13 +6,15 @@ import previous from "../../public/arrow-left-grey.png";
 import check from "../../public/check.png";
 import Image from "next/image";
 function Login() {
+    var number1=1
+    var number2=10
   if (typeof window !== "undefined") {
     $(document).ready(function () {
       "use strict";
 
       var currentStep = $(".current-step").html();
       var totalStep = $(".total-step").html();
-
+        
       function checkStep() {
         if (currentStep == totalStep) {
           $(".step-count").addClass("final-step");
@@ -28,7 +30,7 @@ function Login() {
       $(".test-step .button").on("click", function (e) {
         e.preventDefault();
 
-        // currentStep++;
+        // number1++;
         $(".current-step").html(currentStep);
         checkStep();
 
@@ -39,7 +41,7 @@ function Login() {
       $(".test-step .prev-btn").on("click", function (e) {
         e.preventDefault();
 
-        // currentStep--;
+        // number1--;
         $(".current-step").html(currentStep);
         checkStep();
 
@@ -50,7 +52,7 @@ function Login() {
   }
   return (
     <>
-      <div className=" w-full text-center flex-row md:flex items-center mx-4 py-5">
+      <div className=" w-full text-center flex-row md:flex items-center mx-2">
        
 
         <div className=" lg:w-[70%] lg:-mr-[20rem]">
@@ -58,13 +60,13 @@ function Login() {
             <div className="covid-header space-x-4">
               <h2 className="">Bootcamp Registration</h2>
               <span className="step-count">
-                <span className="current-step">1</span>/
-                <span className="total-step">10</span>
+                <span className="current-step"></span>
+                <span className="total-step"></span>
               </span>
             </div>
 
             <form action="#">
-              <div className="covid-test-wrap test-step asign-info active">
+              <div className="covid-test-wrap test-step asign-info active w-[100%]">
                 <p>Kindly fill the application form below. </p>
 
                 <div className="step-block">
