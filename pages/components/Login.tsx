@@ -141,9 +141,7 @@ function Login() {
                       {/* <span></span> */}
                       <select className="form-control" name="role">
                         <option
-                          value="GIS and Remote sensing Expert"
-                          
-                        >
+                          value="GIS and Remote sensing Expert">
                           GIS and Remote sensing Expert
                         </option>
                         <option value="Software engineer">
