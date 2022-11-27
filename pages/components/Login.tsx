@@ -28,7 +28,7 @@ function Login() {
       $(".test-step .button").on("click", function (e) {
         e.preventDefault();
 
-        currentStep++;
+        // currentStep++;
         $(".current-step").html(currentStep);
         checkStep();
 
@@ -39,7 +39,7 @@ function Login() {
       $(".test-step .prev-btn").on("click", function (e) {
         e.preventDefault();
 
-        currentStep--;
+        // currentStep--;
         $(".current-step").html(currentStep);
         checkStep();
 
